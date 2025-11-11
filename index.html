@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lidl España - Ofertas y más</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="https://www.lidl.es/favicon.ico">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Open Sans', sans-serif; }
+    body { background: #fff; color: #333; line-height: 1.5; }
+
+    /* BARRA SUPERIOR AMARILLA */
+    .top-bar {
+      background: #ffed00; padding: 8px 20px; text-align: center; font-size: 14px; font-weight: 600;
+    }
+    .top-bar a { color: #003087; text-decoration: none; }
+
+    /* HEADER PRINCIPAL */
+    header {
+      padding: 15px 20px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 15px;
+    }
+    .logo img { height: 50px; }
+    .search-bar {
+      flex: 1; max-width: 500px; display: flex; border: 1px solid #ccc; border-radius: 4px; overflow: hidden;
+    }
+    .search-bar input {
+      flex: 1; padding: 10px; border: none; font-size: 16px;
+    }
+    .search-bar button {
+      background: #00529B; color: white; border: none; padding: 0 20px; font-weight: 600; cursor: pointer;
+    }
+    .icons {
+      display: flex; align-items: center; gap: 20px; font-size: 20px;
+    }
+    .icons a { color: #333; text-decoration: none; position: relative; }
+    .icons .badge { position: absolute; top: -8px; right: -8px; background: red; color: white; font-size: 10px; width: 16px; height: 16px; border-radius: 50%; display: flex; align-items: center; justify-content: center; }
+
+    /* MENÚS INFERIORES */
+    .menu-secondary, .menu-main {
+      display: flex; justify-content: center; gap: 25px; padding: 10px 20px; font-size: 15px; flex-wrap: wrap;
+    }
+    .menu-secondary { border-bottom: 1px solid #eee; }
+    .menu-main { background: #f8f8f8; font-weight: 600; }
+    .menu-main a { color: #003087; text-decoration: none; }
+    .menu-main a:hover { text-decoration: underline; }
+
+    /* BANNER AZUL */
+    .banner {
+      background: #00529B; color: white; text-align: center; padding: 12px; font-size: 15px; font-weight: 600;
+    }
+
+    /* CATEGORÍAS CIRCULARES */
+    .categories {
+      display: flex; justify-content: center; flex-wrap: wrap; gap: 20px; padding: 40px 20px; max-width: 1200px; margin: 0 auto;
+    }
+    .cat-item {
+      text-align: center; width: 120px;
+    }
+    .cat-circle {
+      width: 90px; height: 90px; border-radius: 50%; margin: 0 auto 10px; display: flex; align-items: center; justify-content: center; background: #ccc;
+    }
+    .cat-circle img { width: 50px; height: 50px; }
+    .cat-item p { font-size: 13px; color: #333; }
+
+    /* Colores reales de categorías */
+    .cat-ofertas .cat-circle { background: #e63312; }
+    .cat-cocina .cat-circle { background: #999; }
+    .cat-brico .cat-circle { background: #006400; }
+    .cat-deporte .cat-circle { background: #ff8c00; }
+    .cat-hogar .cat-circle { background: #d2b48c; }
+    .cat-moda .cat-circle { background: #e63312; }
+    .cat-infantil .cat-circle { background: linear-gradient(135deg, #4a90e2, #50c878); }
+
+    footer {
+      background: #003087; color: white; text-align: center; padding: 20px; font-size: 12px; margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- BARRA AMARILLA -->
+  <div class="top-bar">
+    <span>Envío gratis a partir de 66.6 €</span>
+  </div>
+
+  <!-- HEADER -->
+  <header>
+    <div class="logo">
+      <img src="https://i.imgur.com/Vu5GaTh.png" alt="Lidl" style="width:200px;height:200px;">
+    </div>
+
+    <div class="search-bar">
+      <input type="text" placeholder="Buscar">
+      <button>BUSCAR</button>
+    </div>
+
+    <div class="icons">
+      <a href="#">Folletos</a>
+      <a href="#">Mi tienda</a>
+      <a href="#">Identifícate</a>
+      <a href="#">Lista de deseos</a>
+      <a href="#">Cesta <span class="badge">0</span></a>
+    </div>
+  </header>
+
+  <!-- MENÚ SECUNDARIO -->
+  <nav class="menu-secondary">
+    <a href="#">Vale la pena.</a>
+    <a href="#">Newsletter</a>
+    <a href="#">Empresa</a>
+    <a href="#">Sostenibilidad</a>
+    <a href="#">Sala de prensa</a>
+    <a href="#">Empleo</a>
+    <a href="#">Inmuebles</a>
+    <a href="#">Ayuda</a>
+    <a href="Inicio.html">HALLOWEEN</a>
+  </nav>
+
+  <!-- MENÚ PRINCIPAL -->
+  <nav class="menu-main">
+    <a href="#">Compra Online</a>
+    <a href="#">En tu tienda</a>
+    <a href="#">Lidl Plus</a>
+    <a href="#">Recetas</a>
+    <a href="#">Mundos para ti</a>
+    <a href="#">Inspírate</a>
+  </nav>
+
+  <!-- BANNER AZUL -->
+  <div class="banner">
+    Acumula 3€ por cada 30€ de compra en juguetes
+  </div>
+
+<div align="center" style="padding: 50px 0;">
+    <img src="Banner.png" style="width: 700px;height: 350px; align:center;">
+    
+</div>
+
+  <!-- CATEGORÍAS CIRCULARES -->
+  <div class="categories">
+    <div class="cat-item cat-ofertas">
+      <div class="cat-circle"><span style="color:white;font-weight:bold;">Ofertas</span></div>
+      <p>Todos los descuentos</p>
+    </div>
+    <div class="cat-item cat-cocina">
+      <div class="cat-circle"><img src="https://img.icons8.com/ios/50/ffffff/kitchen.png" alt="Cocina"></div>
+      <p>Cocina y equipamiento doméstico</p>
+    </div>
+    <div class="cat-item cat-brico">
+      <div class="cat-circle"><img src="https://img.icons8.com/ios/50/ffffff/drill.png" alt="Bricolaje"></div>
+      <p>Bricolaje y jardín</p>
+    </div>
+    <div class="cat-item cat-deporte">
+      <div class="cat-circle"><img src="https://img.icons8.com/ios/50/ffffff/dumbbell.png" alt="Deporte"></div>
+      <p>Deporte y bienestar</p>
+    </div>
+    <div class="cat-item cat-hogar">
+      <div class="cat-circle"><img src="https://img.icons8.com/ios/50/ffffff/sofa.png" alt="Hogar"></div>
+      <p>Hogar y decoración</p>
+    </div>
+    <div class="cat-item cat-moda">
+      <div class="cat-circle"><img src="https://img.icons8.com/ios/50/ffffff/t-shirt.png" alt="Moda"></div>
+      <p>Moda y accesorios</p>
+    </div>
+    <div class="cat-item cat-infantil">
+      <div class="cat-circle"><img src="https://img.icons8.com/ios/50/ffffff/rocking-horse.png" alt="Infantil"></div>
+      <p>Moda infantil y juguetes</p>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 Lidl Simulación Demo – Solo para argumentario comercial (NO es sitio oficial)
+  </footer>
+
+</body>
+</html>

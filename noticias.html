@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias | PUMK!™</title>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --deep: #3D0B37;
+            --blood: #63264A;
+            --light: #F3F9D2;
+            --mid: #CBEAA6;
+            --dark: #C0D684;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #0a0a0a;
+            color: var(--light);
+            font-family: 'Roboto', sans-serif;
+        }
+
+        header {
+            background: var(--deep);
+            padding: 30px;
+            text-align: center;
+            border-bottom: 4px solid var(--blood);
+        }
+
+        .logo {
+            font-family: 'Creepster', cursive;
+            font-size: 60px;
+            color: var(--light);
+            text-shadow: 0 0 15px var(--blood);
+        }
+
+        nav {
+            background: var(--blood);
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: var(--mid);
+            margin: 0 20px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            color: var(--light);
+        }
+
+        .news {
+            padding: 50px 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .news h2 {
+            font-size: 32px;
+            color: var(--mid);
+            text-align: center;
+            margin-bottom: 30px;
+            font-family: 'Creepster', cursive;
+        }
+
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .news-item {
+            background: var(--deep);
+            padding: 20px;
+            border-radius: 12px;
+            border: 2px solid var(--blood);
+        }
+
+        .news-item h3 {
+            color: var(--mid);
+            font-size: 20px;
+            margin-bottom: 8px;
+        }
+
+        .news-item .date {
+            color: var(--dark);
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background: var(--deep);
+            color: var(--dark);
+            text-align: center;
+            padding: 30px;
+            font-size: 13px;
+            border-top: 4px solid var(--blood);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">PUMK!™</div>
+    </header>
+    <nav>
+        <a href="Inicio.html">Inicio</a>
+        <a href="sobre-nosotros.html">Sobre nosotros</a>
+        <a href="productos.html">Productos</a>
+        <a href="noticias.html">Noticias</a>
+        <a href="HR.html">Zona de empleados</a>
+    </nav>
+    <section class="news">
+        <h2>Noticias</h2>
+        <div class="news-grid">
+            <div class="news-item">
+                <h3>PUMK! apoya a la comunidad</h3>
+                <div class="date">09 julio 2025</div>
+                <p>Patrocinamos creadores emergentes.</p>
+            </div>
+            <div class="news-item">
+                <h3>Ampliación del departamento I+D</h3>
+                <div class="date">15 marzo 2025</div>
+                <p>Abrimos dos nuevas instalaciones.</p>
+            </div>
+            <div class="news-item">
+                <h3>PUMK! gana caso de difamación</h3>
+                <div class="date">03 enero 2025</div>
+                <p>Publicaciones retiraron artículos falsos.</p>
+            </div>
+        </div>
+    </section>
+    <footer>© 2025 PUMK!™</footer>
+</body>
+
+</html>

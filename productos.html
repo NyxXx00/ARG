@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos | PUMK!™</title>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --deep: #3D0B37;
+            --blood: #63264A;
+            --light: #F3F9D2;
+            --mid: #CBEAA6;
+            --dark: #C0D684;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #0a0a0a;
+            color: var(--light);
+            font-family: 'Roboto', sans-serif;
+        }
+
+        header {
+            background: var(--deep);
+            padding: 30px;
+            text-align: center;
+            border-bottom: 4px solid var(--blood);
+        }
+
+        .logo {
+            font-family: 'Creepster', cursive;
+            font-size: 60px;
+            color: var(--light);
+            text-shadow: 0 0 15px var(--blood);
+        }
+
+        nav {
+            background: var(--blood);
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: var(--mid);
+            margin: 0 20px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            color: var(--light);
+        }
+
+        .productos {
+            padding: 60px 20px;
+            background: var(--deep);
+        }
+
+        .productos h2 {
+            font-size: 34px;
+            color: var(--mid);
+            text-align: center;
+            margin-bottom: 40px;
+            font-family: 'Creepster', cursive;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .card {
+            background: var(--deep);
+            border: 3px solid var(--blood);
+            border-radius: 15px;
+            overflow: hidden;
+            position: relative;
+            cursor: pointer;
+            transition: 0.3s;
+            text-align: center;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 30px var(--blood);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .price {
+            background: var(--blood);
+            color: var(--mid);
+            font-size: 26px;
+            font-weight: 700;
+            padding: 12px;
+        }
+
+        .desc {
+            padding: 18px;
+            font-size: 16px;
+            color: var(--dark);
+        }
+
+        .msg {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: var(--blood);
+            color: var(--light);
+            padding: 14px 20px;
+            border: 3px solid var(--mid);
+            border-radius: 12px;
+            font-family: 'Creepster', cursive;
+            font-size: 20px;
+            opacity: 0;
+            transition: 0.6s;
+        }
+
+        .card:hover .msg {
+            opacity: 1;
+        }
+
+        footer {
+            background: var(--deep);
+            color: var(--dark);
+            text-align: center;
+            padding: 30px;
+            font-size: 13px;
+            border-top: 4px solid var(--blood);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">PUMK!™</div>
+    </header>
+    <nav>
+        <a href="Inicio.html">Inicio</a>
+        <a href="sobre-nosotros.html">Sobre nosotros</a>
+        <a href="productos.html">Productos</a>
+        <a href="noticias.html">Noticias</a>
+        <a href="HR.html">Zona de empleados</a>
+    </nav>
+    <section class="productos">
+        <h2>NUESTROS PRODUCTOS</h2>
+        <div class="grid">
+            <div class="card"><img src="Calabaza_N.png" onclick="this.src='Calabaza_P.png'">
+                <div class="price">3,99€</div>
+                <div class="desc"><strong>Calabaza Mágica</strong><br>Una sola mordida y tu piel se volverá naranja para
+                    siempre.</div>
+                <div class="msg">YA ERES CALABAZA</div>
+            </div>
+            <div class="card"><img src="Caramelos_N.png" onclick="this.src='Caramelos_P.png'">
+                <div class="price">2,49€</div>
+                <div class="desc"><strong>Caramelos Poseídos+</strong><br>Dulces que disuelven tu voluntad paso a paso.
+                </div>
+                <div class="msg">TU ALMA ES NUESTRA</div>
+            </div>
+            <div class="card"><img src="Botella_N.png" onclick="this.src='Botella_P.png'">
+                <div class="price">1,89€</div>
+                <div class="desc"><strong>Bebida PUMK! Zero</strong><br>Refresco de calabaza con fórmula secreta.</div>
+                <div class="msg">TRANSFORMACIÓN COMPLETA</div>
+            </div>
+        </div>
+    </section>
+    <footer>© 2025 PUMK!™</footer>
+</body>
+
+</html>
